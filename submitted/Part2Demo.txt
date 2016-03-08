@@ -1,0 +1,36 @@
+Script started on Fri 04 Mar 2016 11:00:33 PM EST
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ [20P(reverse-i-search)`':[Ca': ./part1s': as --64 part1.s -o part1.o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ as --64 part1.s -o part1.o[C[C[C[Cld -elf_i386 part1.o -o part1./part1[K[3Pexit./part1ld -elf_i386 part1.o -o part1[3Pas --64 part1.s -o part1.o[1P[1@2[C[C[C[C[C[C[C[C[C[C[C[1P.o2.o
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ as --64 part2.s -o part2.oexit[K./part1ld -elf_i386 part1.o -o part1
+ld: warning: cannot find entry symbol lf_i386; defaulting to 00000000004000b0
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ld -elf_i386 part1.o -o part1[K2[1P[1@2
+ld: warning: cannot find entry symbol lf_i386; defaulting to 0000000000400078
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./part2
+$ exit
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ gdb /[K./part2
+GNU gdb (Ubuntu 7.7.1-0ubuntu5~14.04.2) 7.7.1
+Copyright (C) 2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./part2...(no debugging symbols found)...done.
+(gdb) x /100xb part[K[K[K[K_start
+0x400078 <_start>:	0x48	0x89	0xe5	0x53	0xeb	0x1b	0x5b	0x48
+0x400080 <Cont+2>:	0x89	0xdf	0x48	0x31	0xc0	0xb0	0x3b	0x48
+0x400088 <Cont+10>:	0x31	0xf6	0x48	0x89	0xf2	0x0f	0x05	0x48
+0x400090 <Cont+18>:	0x89	0xc3	0xb0	0x3c	0x48	0x31	0xff	0x0f
+0x400098 <Cont+26>:	0x05	0xe8	0xe0	0xff	0xff	0xff	0x2f	0x62
+0x4000a0 <Path+2>:	0x69	0x6e	0x2f	0x73	0x68	0x00	Cannot access memory at address 0x4000a6
+(gdb) exixt[K[Kt
+Undefined command: "exit".  Try "help".
+(gdb) q
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ exit
+Script done on Fri 04 Mar 2016 11:02:00 PM EST

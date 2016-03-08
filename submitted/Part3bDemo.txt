@@ -1,0 +1,47 @@
+Script started on Sun 06 Mar 2016 11:11:18 PM EST
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ exit./BufferRedirect64gcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@ 
+BufferRedirect64.c: In function ‘main’:
+BufferRedirect64.c:45:3: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type [enabled by default]
+   posix_memalign(&buf, pagesize, strlen(shellcode)+10);
+   ^
+In file included from BufferRedirect64.c:3:0:
+/usr/include/stdlib.h:503:12: note: expected ‘void **’ but argument is of type ‘char **’
+ extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+            ^
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./BufferRedirect64 
+Segmentation fault (core dumped)
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./BufferRedirect64 gcc -o BufferRedirect64 BufferRedirect64.cexit[K./BufferRedirect64gcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[1P[1@x[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+BufferRedirect64.c: In function ‘main’:
+BufferRedirect64.c:45:3: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type [enabled by default]
+   posix_memalign(&buf, pagesize, strlen(shellcode)+10);
+   ^
+In file included from BufferRedirect64.c:3:0:
+/usr/include/stdlib.h:503:12: note: expected ‘void **’ but argument is of type ‘char **’
+ extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+            ^
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ gcc -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./BufferRedirect64 [Kgcc -o BufferRedirect64 BufferRedirect64.c[23P./BufferRedirect64 
+Segmentation fault (core dumped)
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./BufferRedirect64 gcc -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./BufferRedirect64 [Kgcc -o BufferRedirect64 BufferRedirect64.cexit[K./BufferRedirect64gcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+BufferRedirect64.c: In function ‘main’:
+BufferRedirect64.c:45:3: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type [enabled by default]
+   posix_memalign(&buf, pagesize, strlen(shellcode)+10);
+   ^
+In file included from BufferRedirect64.c:3:0:
+/usr/include/stdlib.h:503:12: note: expected ‘void **’ but argument is of type ‘char **’
+ extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+            ^
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ,[K./BufferRedirect64 
+$ exit
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./BufferRedirect64 gcc -z execstack -o BufferRedirect64 BufferRedirect64.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[36P./BufferRedirect64 gcc -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./BufferRedirect64 [Kgcc -o BufferRedirect64 BufferRedirect64.cexit[K./BufferRedirect64gcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kgcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c
+BufferRedirect64.c: In function ‘main’:
+BufferRedirect64.c:45:3: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type [enabled by default]
+   posix_memalign(&buf, pagesize, strlen(shellcode)+10);
+   ^
+In file included from BufferRedirect64.c:3:0:
+/usr/include/stdlib.h:503:12: note: expected ‘void **’ but argument is of type ‘char **’
+ extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+            ^
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./BufferRedirect64 
+$ exit
+]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ exiu[Kt
+Script done on Sun 06 Mar 2016 11:14:20 PM EST
