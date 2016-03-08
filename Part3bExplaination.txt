@@ -1,0 +1,5 @@
+Without execstack compile time option, the program produces segmentation fault.
+
+With execstack and without stack protection turned off, the program runs without giving any errors though it fails to open shell. This is because the shellcode overwrites the canary value. The canary value is checked when function uses return value and thus the shellcode is not executed.
+
+The program is able to open the shell when both the compile time options are includes.
