@@ -1,14 +1,0 @@
-Script started on Sun 06 Mar 2016 10:56:53 PM EST
-]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ [20P(reverse-i-search)`':[Ca': gdb ./part2s': as --64 part2.s -o part2.o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ as --64 part2.s -o part2.o[C[C[C[C[C[C[C[C[C[C[C[Cexit[K./part1g[K[K[K[K[K[K[K[K[20P(reverse-i-search)`':[C[24@g': gdb ./BufferRedirect64c': gcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@c[C[C[C]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ gcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pecho 0 | sudo tee /proc/sys/kernel/randomize_va_space[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -z execstack -fno-stack-protector -o BufferRedirect64 BufferRedirect64.c
-BufferRedirect64.c: In function ‘main’:
-BufferRedirect64.c:45:3: warning: passing argument 1 of ‘posix_memalign’ from incompatible pointer type [enabled by default]
-   posix_memalign(&buf, pagesize, strlen(shellcode)+10);
-   ^
-In file included from BufferRedirect64.c:3:0:
-/usr/include/stdlib.h:503:12: note: expected ‘void **’ but argument is of type ‘char **’
- extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
-            ^
-]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./BufferRedirect64
-$ exit
-]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ exit
-Script done on Sun 06 Mar 2016 10:57:46 PM EST

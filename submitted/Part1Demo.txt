@@ -1,12 +1,0 @@
-Script started on Fri 04 Mar 2016 10:37:17 PM EST
-]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ [20P(reverse-i-search)`':[Ca': execstack -s ./BufferRedirect64exit[8Ps': as --64 part1.s -o part1.o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ as --64 part1.s -o part1.o
-]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ [20P(reverse-i-search)`':[Cl': cleard': ld -elf_i386 part1.o -o part1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ld -elf_i386 part1.o -o part1
-ld: warning: cannot find entry symbol lf_i386; defaulting to 00000000004000b0
-]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ ./part1
-$ ls
-BufferRedirect64     BufferRedirectViaStack64	  Part1Demo.txt  attack.c~	part1	 part1.s~  part2.s   vuln.c
-BufferRedirect64.c   BufferRedirectViaStack64.c   attack	 bytecode.txt~	part1.o  part2	   part2.s~
-BufferRedirect64.c~  BufferRedirectViaStack64.c~  attack.c	 part.s		part1.s  part2.o   vuln
-$ exit
-]0;seclab@SecurityLabUbuntu64: ~/Assignmentsseclab@SecurityLabUbuntu64:~/Assignments$ exit
-Script done on Fri 04 Mar 2016 10:38:25 PM EST
